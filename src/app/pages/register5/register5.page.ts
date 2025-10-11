@@ -75,20 +75,25 @@ export class Register5Page implements OnInit {
   }
 
   async finish() {
-    //   const user: IUserCreate = {
-    //   name: this.globalUserSrv.getName(),
-    //   lastName: this.globalUserSrv.getLastName(),
-    //   email: this.globalUserSrv.getEmail(),
-    //   password: this.globalUserSrv.getPassword(),
-    //   country: this.globalUserSrv.getCountry(),
-    //   gender: this.globalUserSrv.getGender(),
-    //   birthDate: this.globalUserSrv.getBirthDate(),
-    //   hobbits: this.globalUserSrv.getHobbits(),
-    //   images: this.globalUserSrv.getImages()
-    // };
-    // await this.userSrv.create(user);
-    // console.log(user);
+      const user: IUserCreate = {
+      name: this.globalUserSrv.getName(),
+      lastName: this.globalUserSrv.getLastName(),
+      email: this.globalUserSrv.getEmail(),
+      password: this.globalUserSrv.getPassword(),
+      country: this.globalUserSrv.getCountry(),
+      gender: this.globalUserSrv.getGender(),
+      birthDate: this.globalUserSrv.getBirthDate(),
+      hobbits: this.globalUserSrv.getHobbits(),
+      images: this.globalUserSrv.getImages()
+    };
+    await this.userSrv.create(user);
+   
+    if (user) {
+      this.navSrv.navigateRoot('/home');
+      console.log(user);
+      
+      
+    }
 
-    this.navSrv.navigateRoot('/home');
   }
 }

@@ -29,7 +29,7 @@ export class Auth {
 
       if (resp) {
 
-        this.navSrv.navigateRoot("/register")
+        this.navSrv.navigateRoot("/home")
 
       }
       console.log(resp);

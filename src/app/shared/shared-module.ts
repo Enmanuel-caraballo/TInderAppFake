@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './components/button/button.component';
 import { IonicModule } from '@ionic/angular';
@@ -8,10 +8,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SelectButtonComponent } from './components/select-button/select-button.component';
 import { ChipComponent } from './components/chip/chip.component';
 import { CardComponent } from './components/card/card.component';
+import {
+  register as registerSwiperElement
+} from 'swiper/element/bundle';
+registerSwiperElement();
 
 const  modules = [IonicModule, RouterModule, ReactiveFormsModule, FormsModule];
 const components = [ButtonComponent, InputComponent, SelectButtonComponent, ChipComponent, CardComponent];
 @NgModule({
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
   declarations: [components],
   imports: [
     CommonModule, modules

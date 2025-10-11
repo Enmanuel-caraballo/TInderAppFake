@@ -15,7 +15,7 @@ export class HomePage implements OnInit {
 
 
   ngOnInit() {
-    console.log(this.crudSrv.getById('users'));
+    console.log(this.crudSrv.getAll('users'));
 
   }
 

@@ -1,3 +1,23 @@
-<ion-card *ngFor="let item of usersShow">
-  <img [src]="item.img" alt="">
+<swiper-container  loop="true" >
+  <swiper-slide *ngFor="let item of usersShow">
+<ion-card >
+  <div class="image-container">
+    <img [src]="item.img" alt="">
+
+    <div class="distance-badge">
+      1 Km
+    </div>
+
+
+    <img src="../../../../assets/images/Tinder_(app)-Flame-Logo.wine.svg" alt="logo" class="tinder-icon" />
+
+
+    <div class="info"> 
+      {{item.name}} {{item.lastName}}
+      {{item.gender}} 
+    </div>
+
+  </div>
 </ion-card>
+</swiper-slide>
+</swiper-container>

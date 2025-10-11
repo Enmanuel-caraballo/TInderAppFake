@@ -19,7 +19,7 @@ export class Crud {
     }
   }
 
- async getById(collectionName: string){
+ async getAll(collectionName: string){
   try {
     const ref = collection(this.fireSt, collectionName);
     // const q = query(ref, where("uid", "==", id));

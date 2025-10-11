@@ -21,6 +21,8 @@ export class LoginPage implements OnInit {
   async onLogin(){
     console.log(this.loginForm.value);
     await this.authSrv.login(this.email.value, this.password.value);
+
+
    }
 
   ngOnInit() {
