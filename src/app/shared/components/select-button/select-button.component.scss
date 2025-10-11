@@ -1,0 +1,26 @@
+ion-button {
+  --background: transparent;
+  --color: #ffffff;
+  --border-color: #ffffff;
+  --border-style: solid;
+  --border-width: 2px;
+  --border-radius: 30px;
+  --padding-top: 12px;
+  --padding-bottom: 12px;
+  --padding-start: 0;
+  --padding-end: 0;
+  --ripple-color: rgba(255, 255, 255, 0.2);
+  --box-shadow: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 50px;
+  width: 300px;
+  max-width: 280px;
+  margin: 8px 0;
+  transition: all 0.3s ease;
+}
+
+ion-button:hover,
+ion-button:focus {
+  background: rgba(255, 255, 255, 0.2);
+}

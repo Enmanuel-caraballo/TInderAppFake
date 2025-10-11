@@ -1,0 +1,30 @@
+ion-input {
+  --color: #0056ff; /* texto del input */
+  --placeholder-color: #e9ecf2; /* color del placeholder */
+  --highlight-color-focused: #e7ebf3; /* color del borde al enfocar */
+  --highlight-color-valid: #0056ff;
+  --highlight-color-invalid: #ff0000;
+
+  color: #ebeef4;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+
+  /* para que las líneas del input sean visibles */
+  --border-color: #0056ff;
+  --border-width: 1px;
+}
+
+ion-label {
+  color: #e9edf4 !important; /* etiqueta flotante */
+  font-weight: 500;
+}
+
+.border_blue {
+  --border-color: #FFFFFF;
+  --border-width: 1px;
+}
+
+/* Toggle de password (el ojito) */
+ion-input-password-toggle {
+  color: #0056ff !important;
+}

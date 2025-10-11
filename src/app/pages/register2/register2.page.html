@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+   <div class="form-wrapper" >
+
+      <img src="../../../assets/images/Tinder_(app)-Logo.wine.svg" alt="">
+
+      <div class="etiGender">
+        <h3>I am a </h3>
+      </div>
+
+      <app-select-button
+      value="Man"
+      (click)="setValue('male')"
+      ></app-select-button>
+
+      <app-select-button
+      (click)="setValue('female')"
+      chosed="2"
+      value="Women"></app-select-button>
+ </div>
+
+         <ion-row>
+          <ion-col>
+
+            <app-button
+            type="submit"
+            color="primary"
+           
+            value="Register"
+            (click)="goNext()">
+            </app-button>
+
+            </ion-col>
+        </ion-row>
+</ion-content>
+

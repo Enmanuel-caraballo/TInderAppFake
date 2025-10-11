@@ -1,0 +1,137 @@
+ion-content {
+  --background: linear-gradient(180deg, #fd297b 0%, #ff655b 50%, #ff9a44 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+
+.form-wrapper {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 280px;
+  margin-bottom: 40px;
+}
+
+// a {
+//   color: #ffffff;
+//   font-size: 0.9rem;
+//   text-decoration: none;
+//   display: inline-block;
+//   margin-top: 30px; /* separación extra */
+// }
+
+// a:hover {
+//   text-decoration: underline;
+// }
+
+app-button {
+  justify-self: center;
+  align-self: center;
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #fd297b, #ff655b, #ff9a44);
+  border-radius: 50px;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 14px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+/* Enlace */
+// a {
+//   color: #ffffff;
+//   font-size: 0.9rem;
+//   text-decoration: none;
+//   display: inline-block;
+//   margin-top: 30px; /* separación extra */
+// }
+
+// a:hover {
+//   text-decoration: underline;
+// }
+
+
+ion-row, ion-col {
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 0;
+}
+
+ion-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ion-col {
+  display: flex;
+  justify-content: center;
+}
+
+app-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* para que no llegue al borde de la pantalla */
+  max-width: 300px;
+  margin: 30px auto 0 auto; /* centrado y con espacio arriba */
+}
+
+.cumple-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.cumple-container h4 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+app-input {
+  width: 80%;
+  max-width: 300px;
+  --background: transparent;
+  --color: #ffffff;
+  --placeholder-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  outline: none;
+}
+
+/* Si app-input encapsula un input real, puedes reforzar el tamaño así: */
+app-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Espacio adicional debajo del input */
+.cumple-container app-input {
+  margin-bottom: 30px;
+}
+
+

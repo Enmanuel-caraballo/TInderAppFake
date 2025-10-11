@@ -1,0 +1,103 @@
+<ion-content [fullscreen]="true">
+   <div class="form-wrapper" >
+  <form [formGroup]="registerForm" (ngSubmit)="doRegister()">
+      <img src="../../../assets/images/Tinder_(app)-Logo.wine.svg" alt="">
+    <ion-card>
+
+        <ion-row>
+          <ion-col>
+            <app-input
+            type="text"
+            label="First name"
+            placeholder="Your first name"
+            labelPlacement="floating"
+            [control]="name"
+            >
+            </app-input>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col>
+            <app-input
+            type="text"
+            label="Last name"
+            placeholder="Your last name"
+            labelPlacement="floating"
+            [control]="lastName"
+            >
+
+            </app-input>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <app-input
+            type="email"
+            label="Email"
+            placeholder="example@gmail.com"
+            labelPlacement="floating"
+            [control]="email"
+            >
+
+            </app-input>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <app-input
+            type="password"
+            label="Password"
+            placeholder="Your password"
+            labelPlacement="floating"
+            [control]="password"
+            >
+
+            </app-input>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <app-input
+            type="text"
+            label="Country"
+            placeholder="Country"
+            labelPlacement="floating"
+            [control]="country"
+            >
+
+            </app-input>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+
+            <app-button
+            type="submit"
+            color="primary"
+            [disabled]="registerForm.invalid"
+            value="Register"
+            (click)="goNext()">
+            </app-button>
+
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <a routerLink="/login">
+              ¿Ya tienes una cuenta? Log in aquí.
+            </a>
+          </ion-col>
+        </ion-row>
+
+    </ion-card>
+
+  </form>
+</div>
+</ion-content>

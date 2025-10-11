@@ -1,0 +1,166 @@
+ion-content {
+  --background: linear-gradient(180deg, #fd297b 0%, #ff655b 50%, #ff9a44 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+
+.form-wrapper {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 280px;
+  margin-bottom: 40px;
+}
+
+a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px; /* separación extra */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+app-button {
+  justify-self: center;
+  align-self: center;
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #fd297b, #ff655b, #ff9a44);
+  border-radius: 50px;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 14px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+/* Enlace */
+a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px; /* separación extra */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+ion-row, ion-col {
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 0;
+}
+
+ion-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+ion-col {
+  display: flex;
+  justify-content: center;
+}
+
+app-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%; /* para que no llegue al borde de la pantalla */
+  max-width: 300px;
+  margin: 30px auto 0 auto; /* centrado y con espacio arriba */
+}
+
+ion-content {
+  --background: linear-gradient(180deg, #fd297b 0%, #ff655b 50%, #ff9a44 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.camera-icon {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.image-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 90px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+app-button {
+  display: block;
+  width: 80%;
+  max-width: 300px;
+  background: linear-gradient(90deg, #fd297b, #ff655b, #ff9a44);
+  border-radius: 50px;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 14px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+}

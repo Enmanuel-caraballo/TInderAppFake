@@ -1,0 +1,89 @@
+ion-content {
+  --background: linear-gradient(180deg, #fd297b 0%, #ff655b 50%, #ff9a44 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  width: 280px;
+  margin-bottom: 40px;
+}
+
+/* Quita fondo y sombra al card */
+ion-card {
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Inputs personalizados */
+app-input {
+  display: block;
+  margin-bottom: 22px;
+  font-size: 1rem;
+}
+
+/* Forzar estilos dentro de ion-input o app-input */
+ion-input, input {
+  color: #fff !important;
+  font-size: 1.05rem;
+}
+
+ion-label, label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+  opacity: 1;
+}
+
+app-button {
+  margin-top: 25px;
+  display: block;
+  width: 100%;
+  background: linear-gradient(90deg, #fd297b, #ff655b, #ff9a44);
+  border-radius: 50px;
+  color: white !important;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 14px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+app-button[disabled] {
+  opacity: 0.6;
+}
+
+/* Enlace */
+a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 30px; /* separación extra */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ion-row, ion-col {
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 0;
+}

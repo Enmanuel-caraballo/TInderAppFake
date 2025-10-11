@@ -1,0 +1,14 @@
+ <ion-input
+  class="border_blue"
+        [type]="type"
+        [label]="label"
+        [placeholder]="placeholder"
+        [value]="control.value || '' "
+        (ionChange)="onSelect($event)"
+        [labelPlacement]="labelPlacement"
+        (keyup) = 'onType($event);'
+>
+@if (type ==='password') {
+<ion-input-password-toggle slot="end"></ion-input-password-toggle>
+}
+</ion-input>

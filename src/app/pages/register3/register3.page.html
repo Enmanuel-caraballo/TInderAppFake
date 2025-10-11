@@ -1,0 +1,39 @@
+<ion-content [fullscreen]="true">
+  <form [formGroup]="dateForm" (ngSubmit)="goNext()">
+   <div class="form-wrapper" >
+
+      <img src="../../../assets/images/Tinder_(app)-Logo.wine.svg" alt="">
+
+      <div class="cumple-container">
+
+      <h4>My birthdate is</h4>
+
+      <app-input
+       type="date"
+      labelPlacement="start"
+      [control]="birthDay"
+      ></app-input>
+        <h4>{{ageMessage}}</h4>
+      </div>
+
+               <ion-row>
+          <ion-col>
+
+            <app-button
+            type="submit"
+            color="primary"
+            value="Register"
+            (click)="goNext()"
+            >
+            </app-button>
+
+            </ion-col>
+        </ion-row>
+
+
+
+
+</div>
+</form>
+</ion-content>
+

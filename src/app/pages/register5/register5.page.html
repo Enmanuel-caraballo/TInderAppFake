@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+   <div class="form-wrapper" >
+
+      <img src="../../../assets/images/Tinder_(app)-Logo.wine.svg" alt="">
+
+
+
+
+   <h4 class="subtitle">Add media</h4>
+    <ion-icon name="camera-outline" class="camera-icon"
+    (click)="pickImage()"></ion-icon>
+
+    <div class="image-grid">
+      <ion-card *ngFor="let item of imgUrl; index as i" class="image-card">
+        <img [src]="imgUrl[i]" alt="photo"/>
+      </ion-card>
+    </div>
+
+  <app-button
+  (click)="finish()"></app-button>
+
+
+ </div>
+
+
+</ion-content>
+
