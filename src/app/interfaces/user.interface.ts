@@ -12,6 +12,7 @@ export interface IUser{
 }
 
 export interface IUserAuth extends Pick<IUser, 'email' | 'password'>{}
+export interface IUserUpdate extends Pick<IUser, 'name' | 'lastName' | 'country' | 'hobbits' | 'images'>{}
 export interface IUserShow extends Pick<IUser, 'name' | 'lastName' |'gender'>{
   img: string;
 }

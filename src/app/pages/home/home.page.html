@@ -1,11 +1,30 @@
 <ion-content [fullscreen]="true">
 
-     <app-card>
+     <app-card
 
-       
+    [items]="usersShow"
+    [itemTemplate]="userCardTemplate">
+
      </app-card>
-     
-    
+
+     <ng-template #userCardTemplate let-item>
+  <ion-card>
+    <div class="image-container">
+      <img [src]="item.img" alt="" />
+      <div class="distance-badge">1 Km</div>
+      <img
+        src="../../../../assets/images/Tinder_(app)-Flame-Logo.wine.svg"
+        alt="logo"
+        class="tinder-icon"
+      />
+      <div class="info">
+        {{ item.name }} {{ item.lastName }}
+        {{ item.gender }}
+      </div>
+    </div>
+  </ion-card>
+</ng-template>
+    <app-tab></app-tab>
 </ion-content>
 
 

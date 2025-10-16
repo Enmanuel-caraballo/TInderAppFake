@@ -1,0 +1,85 @@
+<ion-content [fullscreen]="true">
+   <div class="form-wrapper" >
+  <form [formGroup]="updateForm" (ngSubmit)="submitUpdate()">
+
+    <div class="photos-container">
+
+
+        <ion-card *ngFor="let item of imagesUser">
+          <img [src]="item" alt="" class="image-card">
+        </ion-card>
+
+
+    </div>
+
+
+
+    <ion-card>
+        <ion-row>
+          <ion-col>
+            <app-input
+            type="text"
+            label="First name"
+            placeholder="Your first name"
+            labelPlacement="floating"
+            [control]="name"
+            >
+            </app-input>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row>
+          <ion-col>
+            <app-input
+            type="text"
+            label="Last name"
+            placeholder="Your last name"
+            labelPlacement="floating"
+            [control]="lastName"
+            >
+
+            </app-input>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col>
+            <app-input
+            type="text"
+            label="Country"
+            placeholder="Country"
+            labelPlacement="floating"
+            [control]="country"
+            >
+
+            </app-input>
+            </ion-col>
+        </ion-row>
+        
+        <div class="passions-container">
+         <ion-chip *ngFor="let item of passionsU">
+          {{item}}
+         </ion-chip>
+        </div>
+
+        <ion-row>
+          <ion-col>
+
+            <app-button
+            type="submit"
+            color="primary"
+            [disabled]="updateForm.invalid"
+            value="Register"
+            (click)="update()">
+            </app-button>
+
+            </ion-col>
+        </ion-row>
+    </ion-card>
+
+
+
+  </form>
+</div>
+</ion-content>

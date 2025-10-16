@@ -1,0 +1,158 @@
+ion-content {
+  --background: linear-gradient(180deg, #f1e3e3 0%, #d0b6b3 50%, #b98b6e 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+/* Contenedor general */
+.form-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  padding: 25px 20px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+/* Card transparente y limpio */
+ion-card {
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+ion-content {
+  --background: linear-gradient(180deg, #f1e3e3 0%, #d0b6b3 50%, #b98b6e 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+/* Contenedor general */
+.form-wrapper {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  padding: 25px 20px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+/* Card transparente y limpio */
+ion-card {
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Títulos de sección */
+ion-card h2, ion-card h3 {
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Inputs personalizados */
+app-input {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* Inputs y labels internos */
+ion-input, input {
+  color: #fff !important;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+ion-label, label {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Botón principal — centrado */
+app-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0 auto; /* centra horizontalmente */
+  width: 80%; /* un poco más pequeño que el formulario */
+  background: linear-gradient(90deg, #fd297b, #ff655b, #ff9a44);
+  border-radius: 40px;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 14px 0;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(255, 101, 91, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+app-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 101, 91, 0.45);
+}
+
+app-button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Enlaces */
+a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 25px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffd2c2;
+  text-decoration: underline;
+}
+
+/* Grid para los inputs */
+ion-row, ion-col {
+  --ion-grid-padding: 0;
+  --ion-grid-column-padding: 0;
+}
+
+/* Contenedor de fotos */
+.photos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  width: 100
+}

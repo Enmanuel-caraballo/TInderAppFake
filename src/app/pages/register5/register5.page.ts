@@ -17,7 +17,7 @@ export class Register5Page implements OnInit {
 
   @Input() src: string = '';
 
-
+  
   public imgUrl: string[] = [];
 
 
@@ -87,12 +87,12 @@ export class Register5Page implements OnInit {
       images: this.globalUserSrv.getImages()
     };
     await this.userSrv.create(user);
-   
+
     if (user) {
       this.navSrv.navigateRoot('/home');
       console.log(user);
-      
-      
+
+
     }
 
   }

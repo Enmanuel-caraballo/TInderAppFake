@@ -11,10 +11,11 @@ import { CardComponent } from './components/card/card.component';
 import {
   register as registerSwiperElement
 } from 'swiper/element/bundle';
+import { TabComponent } from './components/tab/tab.component';
 registerSwiperElement();
 
 const  modules = [IonicModule, RouterModule, ReactiveFormsModule, FormsModule];
-const components = [ButtonComponent, InputComponent, SelectButtonComponent, ChipComponent, CardComponent];
+const components = [ButtonComponent, InputComponent, SelectButtonComponent, ChipComponent, CardComponent, TabComponent];
 @NgModule({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   declarations: [components],

@@ -35,8 +35,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
   {
+    path: 'update-profile',
+    loadChildren: () => import('./pages/update-profile/update-profile.module').then( m => m.UpdateProfilePageModule)
+  },
+  {
     path: '**',
-    redirectTo: 'register2',
+    redirectTo: '',
     pathMatch: 'full'
   },
 ];

@@ -1,6 +1,10 @@
 <swiper-container  loop="true" >
-  <swiper-slide *ngFor="let item of usersShow">
-<ion-card >
+  <swiper-slide  *ngFor="let item of items; index as i">
+
+      <ng-container
+      *ngTemplateOutlet="itemTemplate; context: { $implicit: item }"
+    ></ng-container>
+<!-- <ion-card >
   <div class="image-container">
     <img [src]="item.img" alt="">
 
@@ -12,12 +16,15 @@
     <img src="../../../../assets/images/Tinder_(app)-Flame-Logo.wine.svg" alt="logo" class="tinder-icon" />
 
 
-    <div class="info"> 
+    <div class="info">
       {{item.name}} {{item.lastName}}
-      {{item.gender}} 
+      {{item.gender}}
     </div>
 
   </div>
-</ion-card>
+</ion-card> -->
 </swiper-slide>
 </swiper-container>
+
+
+

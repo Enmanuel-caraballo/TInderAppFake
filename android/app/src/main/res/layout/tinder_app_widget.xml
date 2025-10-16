@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tinder_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+  <ImageView
+    android:id="@+id/tinder_logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scaleType="fitCenter"
+    android:src="@drawable/tinder_logo"
+    android:contentDescription="@string/tinder_logo_description"
+    />
+
+
+  <TextView
+        android:id="@+id/appwidget_text"
+        style="@style/Widget.Android.AppWidget.InnerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dp"
+
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

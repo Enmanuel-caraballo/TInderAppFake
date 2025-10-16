@@ -10,9 +10,10 @@ import { IonicStorageModule, Storage } from '@ionic/storage-angular';
 import { CoreModule } from './core/core-module';
 import { provideHttpClient } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicStorageModule.forRoot(), CoreModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicStorageModule.forRoot(), CoreModule,],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     provideHttpClient()
   ],

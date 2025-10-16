@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class GlobalUser {
-
+  private uid: string = '';
   private name: string = '';
   private lastName: string = '';
   private email: string = '';
@@ -14,6 +14,14 @@ export class GlobalUser {
   private birthDate: string = '';
   private hobbits: string[] = [];
   private images: string[] = [];
+
+  setUid(uid: string){
+    this.uid = uid;
+  }
+
+  getUid(): string{
+    return this.uid;
+  }
 
   setName(name: string){
     this.name = name;

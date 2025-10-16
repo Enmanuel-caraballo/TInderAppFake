@@ -60,4 +60,30 @@ export class Crud {
     throw error;
   }
  }
+
+ async getByUid(collectionName: string, uid: string){
+  try {
+    const ref = collection(this.fireSt, collectionName);
+    const q = query(ref, where("uid", "==", uid));
+    const snapshot = await getDocs(q);
+
+    if (snapshot.empty) {
+      console.warn("No hay usuario con esa uid")
+      return null;
+    }else{
+      return snapshot.docs.map(doc => ({
+        uid: doc.id,
+        ...(doc.data() as IUserCreate)
+      }));
+    }
+
+  } catch (error) {
+    console.log('Error al obtener', error);
+    return;
+  }
+
+
+ }
+
+
 }
