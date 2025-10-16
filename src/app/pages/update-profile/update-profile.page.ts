@@ -15,8 +15,8 @@ export class UpdateProfilePage implements OnInit {
  name!: FormControl;
  lastName!: FormControl;
  country!: FormControl;
- passions!: FormControl;
- media!: FormControl;
+//  passions!: FormControl;
+//  media!: FormControl;
 
  updateForm!: FormGroup;
 
@@ -51,6 +51,8 @@ if (userToUpdate) {
   this.imagesUser = u.images;
   this.passionsU = u.hobbits;
 
+  this.globalUserSrv.setAllHobbits(u.hobbits);
+
   console.log(this.imagesUser);
 
   this.updateForm.patchValue({
@@ -75,26 +77,35 @@ if (userToUpdate) {
     this.name = new FormControl('', [Validators.required]);
     this.lastName = new FormControl('', [Validators.required]);
     this.country =  new FormControl('', [Validators.required]);
-    this.passions = new FormControl('');
-    this.media = new FormControl('');
+    // this.passions = new FormControl('');
+    // this.media = new FormControl('');
 
     this.updateForm = new FormGroup({
       name: this.name,
       lastName: this.lastName,
       country: this.country,
-      passions: this.passions,
-      media: this.media
+      // passions: this.passions,
+      // media: this.media
     })
 
   }
 
-  onChange(event: any){
-    
+  addHobbit(value: string){
+
   }
 
   async submitUpdate(){
-
     const id = this.globalUserSrv.getUid()
+
+    const user: IUserUpdate = {
+      name: this.name.value,
+      lastName: this.lastName.value,
+      country: this.country.value,
+      hobbits: this.globalUserSrv.getHobbits(),
+      images:  this.imagesUser
+    }
+
+    await this.crudSrv.modify('users', id, user);
    //export interface IUserUpdate extends Pick<IUser, 'name' | 'lastName' | 'country' | 'hobbits' | 'images'>{}
     // await this.crudSrv.modify('users', id, )
   }

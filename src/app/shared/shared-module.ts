@@ -12,10 +12,12 @@ import {
   register as registerSwiperElement
 } from 'swiper/element/bundle';
 import { TabComponent } from './components/tab/tab.component';
+import { SheetModalComponent } from './components/sheet-modal/sheet-modal.component';
 registerSwiperElement();
 
 const  modules = [IonicModule, RouterModule, ReactiveFormsModule, FormsModule];
-const components = [ButtonComponent, InputComponent, SelectButtonComponent, ChipComponent, CardComponent, TabComponent];
+const components = [ButtonComponent, InputComponent, SelectButtonComponent,
+   ChipComponent, CardComponent, TabComponent, SheetModalComponent];
 @NgModule({
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   declarations: [components],

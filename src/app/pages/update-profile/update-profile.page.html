@@ -56,7 +56,7 @@
             </app-input>
             </ion-col>
         </ion-row>
-        
+
         <div class="passions-container">
          <ion-chip *ngFor="let item of passionsU">
           {{item}}
@@ -71,15 +71,18 @@
             color="primary"
             [disabled]="updateForm.invalid"
             value="Register"
-            (click)="update()">
+            (click)="submitUpdate()">
             </app-button>
+
+              <ion-button id="open-modal" expand="block">Open Sheet Modal</ion-button>
 
             </ion-col>
         </ion-row>
     </ion-card>
 
+    <app-sheet-modal>
 
-
+    </app-sheet-modal>
   </form>
 </div>
 </ion-content>

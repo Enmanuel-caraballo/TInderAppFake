@@ -27,9 +27,7 @@ export class ChipComponent {
   }
    setHobbie(value: string){
 
-   this.preferences.push(value);
-
-   this.globalUserSrv.setHobbits(this.preferences);
+   this.globalUserSrv.setHobbits(value);
    console.log(value);
 
 

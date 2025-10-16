@@ -79,8 +79,11 @@ export class GlobalUser {
     return this.birthDate;
   }
 
-  setHobbits(hobbits: string[]){
-    this.hobbits = hobbits;
+  setHobbits(hobbit: string){
+   this.hobbits.push(hobbit);
+  }
+  setAllHobbits(hobbits: string[]){
+   this.hobbits = hobbits;
   }
 
   getHobbits(): string[] {
