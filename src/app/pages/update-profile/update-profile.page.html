@@ -4,7 +4,7 @@
 
     <div class="photos-container">
 
-
+<h3>Profile</h3>
         <ion-card *ngFor="let item of imagesUser">
           <img [src]="item" alt="" class="image-card">
         </ion-card>
@@ -55,9 +55,11 @@
 
             </app-input>
             </ion-col>
-        </ion-row>
+          </ion-row>
 
-        <div class="passions-container">
+          <div class="passions-container">
+            <h4>Passions</h4>
+            <ion-button id="open-modal" expand="block" class="openM">+</ion-button>
          <ion-chip *ngFor="let item of passionsU">
           {{item}}
          </ion-chip>
@@ -70,11 +72,10 @@
             type="submit"
             color="primary"
             [disabled]="updateForm.invalid"
-            value="Register"
+            value="Update"
             (click)="submitUpdate()">
             </app-button>
 
-              <ion-button id="open-modal" expand="block">Open Sheet Modal</ion-button>
 
             </ion-col>
         </ion-row>

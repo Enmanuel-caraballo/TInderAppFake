@@ -1,30 +1,45 @@
 ion-input {
-  --color: #0056ff; /* texto del input */
-  --placeholder-color: #e9ecf2; /* color del placeholder */
-  --highlight-color-focused: #e7ebf3; /* color del borde al enfocar */
-  --highlight-color-valid: #0056ff;
-  --highlight-color-invalid: #ff0000;
+  --color: #ff7e7e; /* texto del input */
+  --placeholder-color: #ffd6d6; /* color del placeholder */
+  --highlight-color-focused: #ffc7c7; /* color del borde al enfocar */
+  --highlight-color-valid: #ff7e7e;
+  --highlight-color-invalid: #ff4d4d;
 
-  color: #ebeef4;
+  color: #ffecec;
   font-size: 1rem;
   letter-spacing: 0.3px;
 
-  /* para que las líneas del input sean visibles */
-  --border-color: #0056ff;
+  --border-color: #ff7e7e;
+  --border-width: 1px;
+  --border-radius: 6px;
+
+  transition: all 0.25s ease;
+}
+
+/* Estilo cuando tiene la clase border_blue (ahora salmón) */
+ion-input.border_blue {
+  --border-color: #ff7e7e;
   --border-width: 1px;
 }
 
+/* Efecto al enfocar */
+ion-input:focus-within {
+  box-shadow: 0 0 6px rgba(255, 126, 126, 0.4);
+  border-radius: 8px;
+}
+
+/* Etiquetas flotantes (labels) */
 ion-label {
-  color: #e9edf4 !important; /* etiqueta flotante */
+  color: #ffcaca !important;
   font-weight: 500;
 }
 
-.border_blue {
-  --border-color: #FFFFFF;
-  --border-width: 1px;
+/* Toggle de contraseña */
+ion-input-password-toggle::part(icon) {
+  color: #ff7e7e;
+  transition: color 0.2s ease;
 }
 
-/* Toggle de password (el ojito) */
-ion-input-password-toggle {
-  color: #0056ff !important;
+ion-input-password-toggle::part(icon):hover {
+  color: #ff4d4d;
 }

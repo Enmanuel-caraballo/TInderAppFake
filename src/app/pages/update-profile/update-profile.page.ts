@@ -90,9 +90,6 @@ if (userToUpdate) {
 
   }
 
-  addHobbit(value: string){
-
-  }
 
   async submitUpdate(){
     const id = this.globalUserSrv.getUid()
